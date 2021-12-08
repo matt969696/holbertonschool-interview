@@ -42,7 +42,6 @@ def canUnlockAll2(boxes):
     return(False)
 
 
-
 def canUnlockAll(boxes):
     """determines if all the boxes can be opened"""
     """print("--------------")"""
