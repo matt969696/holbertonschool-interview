@@ -45,7 +45,7 @@ def canUnlockAll2(boxes):
 def canUnlockAll(boxes):
     """determines if all the boxes can be opened"""
     """print("--------------")"""
-    if not insinstance(boxes, list) or len(boxes) == 0:
+    if not isinstance(boxes, list) or len(boxes) == 0:
         return False
     listoflist = all(isinstance(elem, list) for elem in boxes)
     if listoflist is False:
