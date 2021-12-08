@@ -70,9 +70,10 @@ def canUnlockAll(boxes):
     while toopen:
         n = toopen.pop()
         for i in boxes[n]:
-            if not opend[i] and i < nbbox and isinstance(i, int):
-                opend[i] = 1
-                toopen.append(i)
+            if i < nbbox and isinstance(i, int):
+                if not opend[i]:
+                    opend[i] = 1
+                    toopen.append(i)
     if sum(opend) == nbbox:
         """print("Yesss")"""
         return True
